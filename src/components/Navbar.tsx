@@ -10,7 +10,7 @@ export default function Navbar() {
             <a href="#gymnastics">Aerobic Gymnastics</a>
             <a href="#documentary">Documentary</a>
             <a href="#" className="icon" onClick={() => setIsOpen(!isOpen)}>
-                <i className="fa fa-bars"></i>
+                <i className="fas fa-bars"></i>
             </a>
         </nav>
     );
