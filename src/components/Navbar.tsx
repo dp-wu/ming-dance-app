@@ -1,5 +1,5 @@
 import {useState} from "react";
-export default function NavBar() {
+export default function Navbar() {
     // false = collapsed, true = showing full navbar (open)
     const [isOpen, setIsOpen] = useState(false);
 
