@@ -54,10 +54,6 @@ p { color: var(--fg); }                      /* 让正文继承主色 */
     padding-top: 50px;
     color: #ddd;
 }
-.subtitle {
-    color: var(--muted);
-    margin: 0 auto;
-}
 
 .navbar {
     background: black;
