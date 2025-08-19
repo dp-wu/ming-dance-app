@@ -31,9 +31,10 @@ src/
 ## 📌 Progress
 
 - [x] Project bootstrapped with Vite + React + TypeScript
-- [ ] Build and style landing page
-- [ ] Add navigation
-- [ ] Add content sections
+- [x] Build and style landing page
+- [x] Add navigation
+- [x] Add content sections
+- [ ] Add detail pages for each section
 
 ## 📜 License
 
