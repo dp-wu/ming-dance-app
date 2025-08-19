@@ -3,9 +3,9 @@ export default function Biography() {
         <section className="card" id="bio">
             <h2>Biography</h2>
             <div className="left-right">
-                <img src="images/profile.jpg" alt="Ming Dance"/>
+                <img src="/public/profile.jpg" alt="Ming Dance"/>
                 <div className="card-text-right">
-                    <h2>Ming 鸣 Zhao</h2>
+                    <h3>Ming 鸣 Zhao</h3>
                     <p>Heigh: 5'10"</p>
                     <p>Weight: 140lbs</p>
                     <p>Location: San Francisco</p>

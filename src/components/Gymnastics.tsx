@@ -14,7 +14,7 @@ export default function Gymnastics() {
                     </iframe>
                 </div>
                 <div className="card-text-left">
-                    <h2>National/Provincial Youth Competition</h2>
+                    <h3>National/Provincial Youth Competition</h3>
                     <p>Year: 2005 - 2008</p>
                     <a className="fancy" href="#">
                         <span className="top-key"></span>

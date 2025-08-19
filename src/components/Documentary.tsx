@@ -4,7 +4,7 @@ export default function Documentary() {
             <h2>Documentary</h2>
             <div className="right-left">
                 <div className="card-text-left">
-                    <h2>The Dancer (USF Campus Movie Festival)</h2>
+                    <h3>The Dancer (USF Campus Movie Festival)</h3>
                     <p>Year: 2012</p>
                     <a className="fancy" href="#">
                         <span className="top-key"></span>
