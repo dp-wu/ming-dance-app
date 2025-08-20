@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Gymnastics() {
     return (
         <section className="card" id="gymnastics">
@@ -10,18 +12,17 @@ export default function Gymnastics() {
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                         title="高水平男单">
-
                     </iframe>
                 </div>
                 <div className="card-text-left">
                     <h3>National/Provincial Youth Competition</h3>
                     <p>Year: 2005 - 2008</p>
-                    <a className="fancy" href="#">
+                    <Link className="fancy" to="/gymnastics">
                         <span className="top-key"></span>
                         <span className="text">More Aerobic Gymnastics -&gt;</span>
                         <span className="bottom-key-1"></span>
                         <span className="bottom-key-2"></span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

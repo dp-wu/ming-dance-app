@@ -134,12 +134,7 @@ p { color: var(--fg); }                      /* 让正文继承主色 */
 }
 .video-embed iframe{ position:absolute; inset:0; width:100%; height:100%; border:0 }
 
-.fancy{
-    display:inline-flex; align-items:center; gap:.5rem;
-    border:1px solid var(--border); border-radius:999px; padding:10px 14px;
-    background:rgba(255,255,255,.03); transition:background .2s, border-color .2s, color .2s;
-    color: var(--fg);
-}
+
 /* From Uiverse.io by cssbuttons-io */
 .fancy {
     background-color: transparent;

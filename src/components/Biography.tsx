@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 import portrait from '../assets/profile.jpg';
 
 export default function Biography() {
@@ -13,12 +16,12 @@ export default function Biography() {
                     <p>Location: San Francisco</p>
                     <p>Aerobic Gymnastic Champions</p>
                     <p>Dancer (Ballet, Contemporary, Chinese Dance)</p>
-                    <a className="fancy" href="#">
+                    <Link className="fancy" to="/bio">
                         <span className="top-key"></span>
                         <span className="text">View Training, Awards &amp; Honor -&gt;</span>
                         <span className="bottom-key-1"></span>
                         <span className="bottom-key-2"></span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

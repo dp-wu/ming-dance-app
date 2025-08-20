@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 export default function Documentary() {
     return (
         <section className="card" id="documentary">
@@ -6,12 +9,12 @@ export default function Documentary() {
                 <div className="card-text-left">
                     <h3>The Dancer (USF Campus Movie Festival)</h3>
                     <p>Year: 2012</p>
-                    <a className="fancy" href="#">
+                    <Link className="fancy" to="/documentary">
                         <span className="top-key"></span>
                         <span className="text">More Documentary About Me -&gt;</span>
                         <span className="bottom-key-1"></span>
                         <span className="bottom-key-2"></span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="video-embed">
                     <iframe

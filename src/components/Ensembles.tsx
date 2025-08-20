@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 export default function Ensembles() {
     return (
         <section className="card" id="ensemble">
@@ -7,12 +10,12 @@ export default function Ensembles() {
                     <h3>Passacaglia (Ballet)</h3>
                     <p>Year of production: 2014</p>
                     <p>Choreographer: Jennifer Polyocan</p>
-                    <a className="fancy" href="#">
+                    <Link className="fancy" to="/ensemble">
                         <span className="top-key"></span>
                         <span className="text">More Contemporary, Ballet &amp; African Dance -&gt;</span>
                         <span className="bottom-key-1"></span>
                         <span className="bottom-key-2"></span>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="video-embed">
