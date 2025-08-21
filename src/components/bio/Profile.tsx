@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from './Profile.module.css';
 
+import dancePhoto from '../../assets/a3_dancing1.jpg'
+
 
 const photoModules = import.meta.glob("../../assets/*.jpg", {eager: true,});
 const photos = Object.entries(photoModules)
@@ -13,27 +15,13 @@ export default function Profile() {
     return (
         <section className="card" id="profile">
             <h2>Biography</h2>
-            <div className="left-right">
-                <div className={styles.gallery}>
-                    <img className={styles.mainPhoto} src={photos[active]} alt={`Gallery photo ${active + 1}`} />
-                    <div className={styles.thumbs} role="list">
-                        {photos.map((src, i) => (
-                            <button
-                                key={i}
-                                type="button"
-                                className={`${styles.thumb}  ${i === active ? ' is-active': ''}`}
-                                onClick={() => setActive(i)}
-                                aria-label={`Show photo ${i + 1}`}
-                                aria-pressed={i === active}
-                            >
-                                <img src={src} alt="thumbnail" />
-                            </button>
-                        ))}
-                    </div>
+            <div className={styles.bioCard}>
+                <div className={styles.bioGallery}>
+                    <img className={styles.mainPhoto} src={dancePhoto} />
                 </div>
-                <div className="card-text-right">
+                <div className={styles.bioTable}>
                     <h3>Training</h3>
-                    <table>
+                    <table className={styles.tableContent}>
                         <tbody>
                             <tr>
                                 <td>Artistic Gymnastics</td>

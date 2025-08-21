@@ -1,68 +1,50 @@
-.gallery {
-    /* this column sits inside .left-right, same width as your old single image */
-    max-width: 80%;
-
-    /* inside the gallery: 2 columns (main photo + right rail) */
+.bioCard {
+    --galleryH: clamp(320px, 42svh, 560px);
     display: grid;
-    gap: 12px;
-    align-items: stretch;
-
-    --galleryH: clamp(320px, 42vh, 560px);
-    --rail: 10%;
-    grid-template-columns: calc(100% - var(--rail)) var(--rail);
-}
-
-.mainPhoto {
-    height: var(--galleryH); /* adjust if you want shorter/taller */
-    object-fit: cover;
-    display: block;
-}
-
-.thumbs {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: auto;
-    overflow-y: hidden;
-    align-items: flex-start;
-}
-
-.thumb {
+    grid-template-columns: 20% 80%;  /* left = 40%, right = 60% */
+    align-items: start;
     width: 100%;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    line-height: 0;
+
+    padding: 5px;
+    margin: 0;
+
+    background-color: pink;
 }
 
-.thumbs .thumb img {
-    display: block;
+.bioGallery {
+    background-color: green;
+    margin: 0;
+    padding: 5px;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.bioTable {
+    background-color: green;
+
+    margin: 0;
+    padding: 5px;
+    min-width: 0;
+    max-width: 100%;
+    overflow: auto;
+    align-self: center;
+}
+
+.bioTable .tableContent {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    margin: 0;
+    padding: 5px;
+    border-collapse: collapse;
+    table-layout: fixed; /* prevents long text from blowing out width */
+    overflow-wrap: anywhere;
+
+    background-color: purple;
 }
 
-@media (max-width: 600px) {
-    .gallery {
-        flex: none;
-        max-width: 100%;
-        grid-template-columns: 1fr; /* thumbs move below on mobile */
-    }
-    .thumbs {
-        flex-direction: row;
-        height: auto;
-        max-height: none;
-        overflow-x: auto;
-    }
-    .thumb {
-        flex: 0 0 auto;
-        width: auto;
-    }
-    .thumbs .thumb img {
-        width: 72px;
-        height: auto;
-        object-fit: contain;
-    }
+
+table {
+    border-collapse: collapse;
+  table-layout: auto;
+    width: max-content;         /* shrink-wrap to the widest content */
+    min-width: 100%;
 }
