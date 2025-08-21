@@ -12,7 +12,8 @@
     border-collapse: collapse;
     table-layout: fixed;
     overflow-wrap: anywhere;
-    width: 95%;
+    width: 100%;
+    padding: 5px;
 }
 
 .awardsCard table tbody tr {
@@ -45,6 +46,8 @@
     }
     .awardsCard table {
         align-self: auto;
+        padding: 0;
+        width: 95%;
     }
     .awardsCard table tbody tr {
         height: 40px;
