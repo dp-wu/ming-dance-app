@@ -1,12 +1,10 @@
 .awardsCard {
     width: 100%;
-    margin: 0 auto;
-    padding: 30px 0;
+    padding: 30px 5px;
 }
 
 .awardsCard table {
     margin: 0 auto;
-    padding: 5px;
     min-width: 0;
     max-width: 100%;
     overflow: auto;
@@ -14,7 +12,7 @@
     border-collapse: collapse;
     table-layout: fixed;
     overflow-wrap: anywhere;
-    width: 100%;
+    width: 95%;
 }
 
 .awardsCard table tbody tr {
@@ -34,6 +32,11 @@
 
 .awardsCard table col:nth-child(3) {
     width: 10ch;   /* “Years” gets a narrow preferred width */
+}
+
+.awardsCard table th:nth-child(3),
+.awardsCard table td:nth-child(3) {
+    text-align: right;
 }
 
 @media (max-width: 600px) {

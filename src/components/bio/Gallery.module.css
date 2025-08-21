@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.container .galleryCard {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.container .galleryCard .mainStrip {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.container .galleryCard .button {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 4%;
+    padding: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #dddddd;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+.container .galleryCard .mainStrip .mainImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+

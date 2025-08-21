@@ -1,17 +1,16 @@
 import styles from './Profile.module.css';
-import dancePhoto from '../../assets/a3_dancing1.jpg'
+import dancePhoto from '../../assets/gallery/dancing1.jpg'
 
 
 export default function Profile() {
     return (
         <section className="card">
-            <h2>Biography</h2>
+            <h2>Training</h2>
             <div className={styles.bioCard}>
                 <div className={styles.bioGallery}>
                     <img className={styles.mainPhoto} src={dancePhoto}  alt="Ming Dance"/>
                 </div>
                 <div className={styles.bioTable}>
-                    <h3>Training</h3>
                     <table className={styles.tableContent}>
                         <colgroup>
                             <col/>

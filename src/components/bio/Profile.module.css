@@ -61,6 +61,11 @@
     width: 10ch;   /* “Years” gets a narrow preferred width */
 }
 
+.bioTable table th:nth-child(3),
+.bioTable table td:nth-child(3) {
+    text-align: right;
+}
+
 @media (max-width: 600px) {
     .bioCard {
         grid-template-columns: 1fr;
