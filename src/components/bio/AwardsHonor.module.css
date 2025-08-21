@@ -1,0 +1,50 @@
+.awardsCard {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.awardsCard table {
+    margin: 0 auto;
+    padding: 5px;
+    min-width: 0;
+    max-width: 100%;
+    overflow: auto;
+    align-self: end;
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow-wrap: anywhere;
+    width: 100%;
+}
+
+.awardsCard table tbody tr {
+    height: 50px;
+    width: max-content;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+}
+
+.awardsCard table tbody tr td {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.awardsCard table col:nth-child(3) {
+    width: 10ch;   /* “Years” gets a narrow preferred width */
+}
+
+@media (max-width: 600px) {
+    .awardsCard {
+        grid-template-columns: 1fr;
+    }
+    .awardsCard table {
+        align-self: auto;
+    }
+    .awardsCard table tbody tr {
+        height: 40px;
+        white-space: wrap;
+    }
+}

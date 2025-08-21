@@ -1,18 +1,14 @@
 .bioCard {
     --galleryH: clamp(320px, 42svh, 560px);
     display: grid;
-    grid-template-columns: 20% 80%;  /* left = 40%, right = 60% */
+    grid-template-columns: 25% 75%;  /* left = 40%, right = 60% */
     align-items: start;
     width: 100%;
-
-    padding: 5px;
-    margin: 0;
-
-    background-color: pink;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
 .bioGallery {
-    background-color: green;
     margin: 0;
     padding: 5px;
     min-width: 0;
@@ -20,14 +16,12 @@
 }
 
 .bioTable {
-    background-color: green;
-
-    margin: 0;
+    margin-left: 20px;
     padding: 5px;
     min-width: 0;
     max-width: 100%;
     overflow: auto;
-    align-self: center;
+    align-self: end;
 }
 
 .bioTable .tableContent {
@@ -37,14 +31,46 @@
     border-collapse: collapse;
     table-layout: fixed; /* prevents long text from blowing out width */
     overflow-wrap: anywhere;
-
-    background-color: purple;
 }
 
-
-table {
+.bioTable table {
     border-collapse: collapse;
-  table-layout: auto;
+    table-layout: auto;
     width: max-content;         /* shrink-wrap to the widest content */
     min-width: 100%;
+    padding: 5px;
+}
+
+.bioTable table tbody tr {
+    height: 50px;
+
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.bioTable table tbody tr td {
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.bioTable table col:nth-child(3) {
+    width: 10ch;   /* “Years” gets a narrow preferred width */
+}
+
+@media (max-width: 600px) {
+    .bioCard {
+        grid-template-columns: 1fr;
+        --galleryH: clamp(220px, 36svh, 420px);
+    }
+    .bioTable {
+        align-self: auto;
+    }
+    .bioTable table tbody tr {
+        height: 40px;
+        white-space: wrap;
+    }
 }

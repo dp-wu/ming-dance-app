@@ -9,6 +9,7 @@ export default function Navbar() {
     return (
         <nav className={isOpen ? "navbar responsive" : "navbar"} id="navbar">
             <Link to="/" onClick={closeMenu} className="active">Home</Link>
+            <Link to="/bio" onClick={closeMenu}>Biography</Link>
             <Link to="/ensemble" onClick={closeMenu}>Dance Ensemble</Link>
             <Link to="/gymnastics" onClick={closeMenu}>Aerobic Gymnastics</Link>
             <Link to="/documentary" onClick={closeMenu}>Documentary</Link>
