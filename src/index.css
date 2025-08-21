@@ -40,6 +40,7 @@ p { color: var(--fg); }                      /* 让正文继承主色 */
     margin: 0 auto;
     padding: 0;
     height: 20vh;
+    min-height: clamp(160px, 16vh, 160px);
     position: relative;
     background-color: black;
     border-bottom: 1px solid var(--border); /* 呼应卡片的边界 */
@@ -116,7 +117,21 @@ p { color: var(--fg); }                      /* 让正文继承主色 */
 .right-left{ grid-template-columns: 1fr 1.1fr } /* 反向 */
 
 @media (max-width: 900px){
-    .left-right, .right-left{ grid-template-columns: 1fr; }
+    .left-right, .right-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .left-right .gallery,
+    .left-right img,
+    .right-left .video-embed {
+        flex: none;
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
 .card-text-right, .card-text-left{
     display:flex;

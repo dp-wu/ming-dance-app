@@ -1,9 +1,10 @@
-import BioPage from '../components/Biography';
+import Profile from '../components/bio/Profile.tsx';
+
 
 export default function DocumentaryPage() {
     return (
         <>
-            <BioPage />
+            <Profile />
         </>
     );
 }

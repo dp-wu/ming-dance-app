@@ -1,0 +1,68 @@
+.gallery {
+    /* this column sits inside .left-right, same width as your old single image */
+    max-width: 80%;
+
+    /* inside the gallery: 2 columns (main photo + right rail) */
+    display: grid;
+    gap: 12px;
+    align-items: stretch;
+
+    --galleryH: clamp(320px, 42vh, 560px);
+    --rail: 10%;
+    grid-template-columns: calc(100% - var(--rail)) var(--rail);
+}
+
+.mainPhoto {
+    height: var(--galleryH); /* adjust if you want shorter/taller */
+    object-fit: cover;
+    display: block;
+}
+
+.thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: auto;
+    overflow-y: hidden;
+    align-items: flex-start;
+}
+
+.thumb {
+    width: 100%;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.thumbs .thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        flex: none;
+        max-width: 100%;
+        grid-template-columns: 1fr; /* thumbs move below on mobile */
+    }
+    .thumbs {
+        flex-direction: row;
+        height: auto;
+        max-height: none;
+        overflow-x: auto;
+    }
+    .thumb {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    .thumbs .thumb img {
+        width: 72px;
+        height: auto;
+        object-fit: contain;
+    }
+}
