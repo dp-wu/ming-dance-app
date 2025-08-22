@@ -7,7 +7,7 @@
 - [x] Build and style landing page
 - [x] Add navigation
 - [x] Add content sections
-- [ ] Add detail pages for each section
+- [x] Add detail pages for each section
 - [ ] Update domain name
 
 ## 📜 License
