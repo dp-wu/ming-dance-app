@@ -13,9 +13,9 @@ export default function Navbar() {
             <Link to="/ensemble" onClick={closeMenu}>Dance Ensemble</Link>
             <Link to="/gymnastics" onClick={closeMenu}>Aerobic Gymnastics</Link>
             <Link to="/documentary" onClick={closeMenu}>Documentary</Link>
-            <a href="#" className="icon" onClick={() => setIsOpen(!isOpen)}>
+            <button type="button" className="icon" onClick={() => setIsOpen(!isOpen)}>
                 <i className="fas fa-bars"></i>
-            </a>
+            </button>
         </nav>
     );
 }

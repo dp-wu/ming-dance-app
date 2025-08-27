@@ -79,11 +79,17 @@ p { color: var(--fg); }                      /* 让正文继承主色 */
     color: #ddd;
 }
 .navbar .icon{
-    display: none;
+    display: none;           /* shown only on small screens */
+    background: none;
+    border: 0;
+    color: #ddd;
+    padding: 14px 16px;      /* match link padding */
+    font-size: 17px;
+    cursor: pointer;
 }
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
+    .navbar .icon {
         float: right;
         display: block;
     }
